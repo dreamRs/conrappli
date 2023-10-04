@@ -246,7 +246,7 @@ if (!is.null(params$polygon_rv)) {
 # Synthetic map of threatened taxa
 
 
-```{r leaflet, fig.show='asis', echo=FALSE, results='asis', eval=chunk_map, warning=FALSE, message=FALSE}
+```{r leaflet, fig.show='asis', results='asis', eval=chunk_map, warning=FALSE, message=FALSE, eval=FALSE}
 
 group_lf <- c("Occurences")
 # 

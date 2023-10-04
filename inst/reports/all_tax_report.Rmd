@@ -35,7 +35,7 @@ create_popup <- function(.data) {
 # Preliminary Conservation Assessment of _`r nrow(params$results)`_  taxa 
 
 
-```{r, echo=FALSE, include=TRUE, results='asis', message=FALSE, warning=FALSE}
+```{r, echo=FALSE, include=TRUE, results='asis', message=FALSE, warning=FALSE, eval=FALSE}
 
 results <- params$results %>% 
   dplyr::as_tibble()
@@ -67,7 +67,7 @@ knitr::kable(count_cat %>% select(-rank),
 </br>
 
 
-```{r, echo=FALSE, include=TRUE, results='asis', message=FALSE, warning=FALSE}
+```{r, echo=FALSE, include=TRUE, results='asis', message=FALSE, warning=FALSE, eval=FALSE}
 
 # parameters_formated <- params$results %>%
 #   as_tibble %>%
@@ -121,7 +121,7 @@ reactable::reactable(
 </br>
 </br>
 
-```{r prep-data, warning=F, message=F, echo=F}
+```{r prep-data, warning=F, message=F, echo=F, eval=FALSE}
 
 merged_data <- dplyr::left_join(
   x = params$data,
@@ -161,7 +161,7 @@ if (!is.null(params$polygon_rv)) {
 ```
 
 
-```{r grid-build, warning=FALSE, message=FALSE, eval=F}
+```{r grid-build, warning=FALSE, message=FALSE, eval=FALSE}
 
 
 # 
@@ -385,7 +385,7 @@ leaf_map
 ```
 
 
-```{r, echo=FALSE, include=TRUE, results='asis', message=FALSE, warning=FALSE, eval=F}
+```{r, echo=FALSE, include=TRUE, results='asis', message=FALSE, warning=FALSE, eval=FALSE}
 
 eoo_res <- 
   results %>% 
